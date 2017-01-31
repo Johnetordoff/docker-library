@@ -45,7 +45,7 @@ RUN apt-get update \
         curl \
     && rm -rf /var/lib/apt/lists/*
 
-ENV SOURCE_BRANCH master
+ENV SOURCE_BRANCH develop
 ENV SOURCE_REPO https://github.com/CenterForOpenScience/modular-file-renderer.git
 ENV WHEELHOUSE /home/.cache/wheelhouse
 ENV UPDATE_CMD 'invoke wheelhouse && invoke install'
